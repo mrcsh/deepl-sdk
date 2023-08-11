@@ -6,7 +6,7 @@ This is an unofficial Go SDK for using the DeepL API.
 # Usage
 
 ```bash
-go get github.com/michimani/deepl-sdk-go
+go get github.com/EYERCORD/deepl-sdk-go
 ```
 
 # Sample
@@ -32,8 +32,8 @@ func main() {
 	}
 
 	text := []string{
-		"こんにちは",
-		"これはサンプルテキストです。",
+		"Привіт",
+		"Це приклад тексту",
 	}
 	params := &params.TranslateTextParams{
 		TargetLang: types.TargetLangEN,
@@ -54,11 +54,4 @@ func main() {
 		fmt.Printf("%s -> %s\n", text[i], res.Translations[i].Text)
 	}
 }
-```
-
-```bash
-$ DEEPL_API_AUTHN_KEY="your-authn-key" DEEPL_API_PLAN="free" go run main.go
-
-こんにちは -> hello
-これはサンプルテキストです。 -> This is a sample text.
 ```
