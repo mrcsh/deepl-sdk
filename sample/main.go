@@ -3,10 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-
-	"github.com/michimani/deepl-sdk-go"
-	"github.com/michimani/deepl-sdk-go/params"
-	"github.com/michimani/deepl-sdk-go/types"
+	"github.com/EYERCORD/deepl-sdk-go/params"
+	"github.com/EYERCORD/deepl-sdk-go/types"
 )
 
 func main() {
