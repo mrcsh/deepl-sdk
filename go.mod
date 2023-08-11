@@ -1,4 +1,4 @@
-module github.com/michimani/deepl-sdk-go
+module github.com/EYERCORD/deepl-sdk-go
 
 go 1.17
 
