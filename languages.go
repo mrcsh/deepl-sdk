@@ -7,7 +7,7 @@ import (
 	"github.com/michimani/deepl-sdk-go/types"
 )
 
-// Languages calls the languages API with type "target" of the Deepl API.
+// TargetLanguages Languages calls the languages API with type "target" of the Deepl API.
 func (c *Client) TargetLanguages(ctx context.Context) (*types.TargetLanguagesResponse, *types.ErrorResponse, error) {
 	params := &params.LanguagesParams{LangType: types.LangTypeTarget}
 	res := types.TargetLanguagesResponse{}
@@ -15,7 +15,7 @@ func (c *Client) TargetLanguages(ctx context.Context) (*types.TargetLanguagesRes
 	return &res, errRes, err
 }
 
-// Languages calls the languages API with type "source" of the Deepl API.
+// SourceLanguages Languages calls the languages API with type "source" of the Deepl API.
 func (c *Client) SourceLanguages(ctx context.Context) (*types.SourceLanguagesResponse, *types.ErrorResponse, error) {
 	params := &params.LanguagesParams{LangType: types.LangTypeSource}
 	res := types.SourceLanguagesResponse{}
