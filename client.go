@@ -3,8 +3,6 @@ package deepl
 import (
 	"errors"
 	"fmt"
-	"os"
-
 	"github.com/michimani/deepl-sdk-go/types"
 )
 
@@ -14,20 +12,21 @@ type Client struct {
 	EndpointBase      string
 }
 
-// NewClient returns new DeepL API client. Authentication key and API plan are setted by env.
-//   Authentication key: DEEPL_API_AUTHN_KEY
-//   API plan: DEEPL_API_PLAN
-//             `free` or `pro` (ignore upper case or lower case)
-func NewClient() (*Client, error) {
+// NewClient returns new DeepL API client.
+//
+//	Authentication key: DEEPL_API_AUTHN_KEY
+//	API plan: DEEPL_API_PLAN
+//	          `free` or `pro` (ignore upper case or lower case)
+func NewClient(AuthKey string, DeeplAPIPlan string) (*Client, error) {
 	var c Client
 
-	authnKey := os.Getenv("DEEPL_API_AUTHN_KEY")
+	authnKey := AuthKey
 	if authnKey == "" {
 		return nil, errors.New("DEEPL_API_AUTHN_KEY is empty")
 	}
 	c.AuthenticationKey = authnKey
 
-	planName := os.Getenv("DEEPL_API_PLAN")
+	planName := DeeplAPIPlan
 	plan, err := types.ToAPIPlan(planName)
 	if err != nil {
 		return nil, errors.New("DEEPL_API_PLAN is empty or invalid. Set `free` or `pro`.")
