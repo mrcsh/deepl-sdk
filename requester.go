@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/mrcsh/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk/types"
 )
 
 const contentType string = "application/x-www-form-urlencoded"
@@ -67,9 +67,6 @@ func (r *Requester) post() (*types.RawResponse, error) {
 	}
 
 	defer resp.Body.Close()
-	if err != nil {
-		return &rr, err
-	}
 
 	bytes, err := ioutil.ReadAll(resp.Body)
 	if err != nil {

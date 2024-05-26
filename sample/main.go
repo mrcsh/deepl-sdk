@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/mrcsh/deepl-sdk-go/params"
-	"github.com/mrcsh/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk/params"
+	"github.com/mrcsh/deepl-sdk/types"
 )
 
 func main() {

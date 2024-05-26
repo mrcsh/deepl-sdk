@@ -1,4 +1,4 @@
-deepl-sdk-go
+deepl-sdk
 ===
 
 This is an unofficial Go SDK for using the DeepL API.
@@ -6,7 +6,7 @@ This is an unofficial Go SDK for using the DeepL API.
 # Usage
 
 ```bash
-go get github.com/mrcsh/deepl-sdk-go
+go get github.com/mrcsh/deepl-sdk
 ```
 
 # Sample
@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/michimani/deepl-sdk-go"
-	"github.com/michimani/deepl-sdk-go/params"
-	"github.com/michimani/deepl-sdk-go/types"
+	"github.com/michimani/deepl-sdk"
+	"github.com/michimani/deepl-sdk/params"
+	"github.com/michimani/deepl-sdk/types"
 )
 
 func main() {

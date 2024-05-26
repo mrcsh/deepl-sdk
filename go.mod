@@ -1,4 +1,4 @@
-module github.com/mrcsh/deepl-sdk-go
+module github.com/mrcsh/deepl-sdk
 
 go 1.22.3
 

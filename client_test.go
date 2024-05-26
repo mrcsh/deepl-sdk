@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/mrcsh/deepl-sdk-go"
-	"github.com/mrcsh/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk"
+	"github.com/mrcsh/deepl-sdk/types"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,12 +3,14 @@ package deepl
 import (
 	"context"
 
-	"github.com/mrcsh/deepl-sdk-go/params"
-	"github.com/mrcsh/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk/params"
+	"github.com/mrcsh/deepl-sdk/types"
 )
 
 // TranslateText calls the translate text API of the Deepl API.
-func (c *Client) TranslateText(ctx context.Context, params *params.TranslateTextParams) (*types.TranslateTextResponse, *types.ErrorResponse, error) {
+func (c *Client) TranslateText(
+	ctx context.Context, params *params.TranslateTextParams,
+) (*types.TranslateTextResponse, *types.ErrorResponse, error) {
 	var res types.TranslateTextResponse
 
 	endpoint := c.EndpointBase + types.EndpointTranslateText

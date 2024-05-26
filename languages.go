@@ -3,8 +3,8 @@ package deepl
 import (
 	"context"
 
-	"github.com/mrcsh/deepl-sdk-go/params"
-	"github.com/mrcsh/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk/params"
+	"github.com/mrcsh/deepl-sdk/types"
 )
 
 // TargetLanguages Languages calls the languages API with type "target" of the Deepl API.
@@ -23,7 +23,7 @@ func (c *Client) SourceLanguages(ctx context.Context) (*types.SourceLanguagesRes
 	return &res, errRes, err
 }
 
-func languages(ctx context.Context, c *Client, params *params.LanguagesParams, res interface{}) (*types.ErrorResponse, error) {
+func languages(_ context.Context, c *Client, params *params.LanguagesParams, res interface{}) (*types.ErrorResponse, error) {
 	endpoint := c.EndpointBase + types.EndpointLanguages
 	params.SetAuthnKey(c.AuthenticationKey)
 	requester := NewRequester(endpoint, params)
