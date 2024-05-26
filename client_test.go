@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/EYERCORD/deepl-sdk-go"
-	"github.com/EYERCORD/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk-go"
+	"github.com/mrcsh/deepl-sdk-go/types"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -71,7 +71,7 @@ func TestNewClient(t *testing.T) {
 				tt.Setenv("DEEPL_API_PLAN", c.planName)
 			}
 
-			client, err := deepl.NewClient()
+			client, err := deepl.NewClient("", "")
 
 			if c.wantErr {
 				assert.Error(tt, err)

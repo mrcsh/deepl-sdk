@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/EYERCORD/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk-go/types"
 )
 
 const contentType string = "application/x-www-form-urlencoded"

@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/EYERCORD/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk-go/types"
 	"github.com/stretchr/testify/assert"
 )
 

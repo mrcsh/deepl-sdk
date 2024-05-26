@@ -3,8 +3,8 @@ package deepl
 import (
 	"context"
 
-	"github.com/EYERCORD/deepl-sdk-go/params"
-	"github.com/EYERCORD/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk-go/params"
+	"github.com/mrcsh/deepl-sdk-go/types"
 )
 
 // TargetLanguages Languages calls the languages API with type "target" of the Deepl API.

@@ -3,7 +3,7 @@ package deepl
 import (
 	"errors"
 	"fmt"
-	"github.com/EYERCORD/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk-go/types"
 )
 
 type Client struct {

@@ -6,7 +6,7 @@ This is an unofficial Go SDK for using the DeepL API.
 # Usage
 
 ```bash
-go get github.com/EYERCORD/deepl-sdk-go
+go get github.com/mrcsh/deepl-sdk-go
 ```
 
 # Sample

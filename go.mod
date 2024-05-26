@@ -1,4 +1,4 @@
-module github.com/EYERCORD/deepl-sdk-go
+module github.com/mrcsh/deepl-sdk-go
 
 go 1.20
 

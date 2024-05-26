@@ -4,8 +4,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/EYERCORD/deepl-sdk-go/params"
-	"github.com/EYERCORD/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk-go/params"
+	"github.com/mrcsh/deepl-sdk-go/types"
 	"github.com/stretchr/testify/assert"
 )
 

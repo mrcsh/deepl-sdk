@@ -3,8 +3,8 @@ package deepl
 import (
 	"context"
 
-	"github.com/EYERCORD/deepl-sdk-go/params"
-	"github.com/EYERCORD/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk-go/params"
+	"github.com/mrcsh/deepl-sdk-go/types"
 )
 
 // Usage calls the translate text API of the Deepl API.

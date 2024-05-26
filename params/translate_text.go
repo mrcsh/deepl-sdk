@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/EYERCORD/deepl-sdk-go/types"
+	"github.com/mrcsh/deepl-sdk-go/types"
 )
 
 // TranslateTextParams is parameters struct for TranslateText API
@@ -17,6 +17,7 @@ type TranslateTextParams struct {
 	SplitSentences     types.SplitSentences
 	PreserveFormatting types.PreserveFormatting
 	Formality          types.Formality
+	TagHandling        string
 }
 
 func (p *TranslateTextParams) SetAuthnKey(k string) {
@@ -50,6 +51,10 @@ func (p *TranslateTextParams) Body() (*strings.Reader, error) {
 
 	if p.Formality.Valid(p.TargetLang) {
 		uv.Add("formality", string(p.Formality))
+	}
+
+	if p.TagHandling != "" {
+		uv.Add("tag_handling", p.TagHandling)
 	}
 
 	return strings.NewReader(uv.Encode()), nil
